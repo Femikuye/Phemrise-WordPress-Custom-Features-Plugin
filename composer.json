@@ -1,0 +1,16 @@
+{
+    "name": "phemrise-ict/phemrise-wp-cf",
+    "description": "This plugin is created for the purpose of adding custom features to WordPress plugins",
+    "type": "plugin",
+    "autoload": {
+        "psr-4": {
+            "PhemriseIct\\PhemriseWpCf\\": "inc/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Phemrise ICT"
+        }
+    ],
+    "require": {}
+}
