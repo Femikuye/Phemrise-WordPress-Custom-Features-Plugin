@@ -1,0 +1,14 @@
+.form-control{
+    padding: .375rem .75rem !important;
+}
+.pagination{
+    list-style: none !important;
+}
+.pagination.pwpcf-idx-property-paging{
+    margin-left: 40px;
+}
+.pwpcf-card-img-top{
+    max-width: 100%;
+    width: 100%;
+    height: inherit;
+}

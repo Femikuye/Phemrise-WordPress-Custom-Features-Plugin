@@ -19,14 +19,15 @@ class Enqueue extends BaseController
     {
         // wp_enqueue_script('media-upload');
         // wp_enqueue_media();
+        wp_register_style('pwpcf_bootstrap_css', '//cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css');
+        wp_enqueue_style('pwpcf_bootstrap_css');
         wp_enqueue_style('pwpcf_admin_base_style', $this->plugin_url . 'assets/admin/css/styles.css');
         wp_enqueue_script('pwpcf_admin_base_script', $this->plugin_url . 'assets/admin/js/scripts.js');
     }
     function ui_enqueue()
     {
-        // wp_enqueue_script('media-upload');
-        // wp_enqueue_media();
-        // wp_enqueue_style('mypluginstyle', $this->plugin_url . 'assets/front/styles.css');
-        // wp_enqueue_script('mypluginscript', $this->plugin_url . 'assets/front/script.js');
+        wp_register_style('pwpcf_bootstrap_css', '//cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css');
+        wp_enqueue_style('pwpcf_bootstrap_css');
+        wp_enqueue_style('pwpcf_admin_base_style', $this->plugin_url . 'assets/front/css/styles.css');
     }
 }

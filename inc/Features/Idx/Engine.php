@@ -7,6 +7,8 @@ namespace PhemriseIct\PhemriseWpCf\Features\Idx;
 
 use PhemriseIct\PhemriseWpCf\Base\BaseController;
 
+use PhemriseIct\PhemriseWpCf\Features\Idx\PropertiesPostType;
+
 class Engine extends BaseController
 {
     public function register(){
@@ -19,7 +21,12 @@ class Engine extends BaseController
 
         if(!isset($options['features']['idx'])) return;
 
-        if(!$options['features']['idx']) return; 
+        if(!$options['features']['idx']['enabled']) return; 
+        
+        $propertiesPostType = new PropertiesPostType();
+
+        $propertiesPostType->register();
+
         
     }
 }
